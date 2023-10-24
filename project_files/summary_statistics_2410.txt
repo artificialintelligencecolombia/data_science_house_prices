@@ -1,0 +1,17 @@
+==============================
+STATISTICS SUMMARY
+==============================
+
+---------------------
+Getting the statistics of the dataset
+---------------------
+
+df.describe()
+- mean: Represents the central tendency of the data.
+Affected by outliers; a few extreme values can skew the mean.
+
+- standard deviation: Measures the amount of variation or dispersion of
+a set of values from the mean.A low standard deviation indicates that
+the values tend to be close to the mean, while a high standard deviation
+indicates that the values are spread out over a wider range.
+Useful for understanding the variability in the data.
