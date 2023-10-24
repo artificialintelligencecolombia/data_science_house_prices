@@ -1,0 +1,51 @@
+==============================
+DISCLOSURE OF THE DATASET
+==============================
+
+---------------------
+Tags explanation
+---------------------
+
+- `MedInc`: This represents the median income in a block group¹².
+It's the median of the total income of all people living in a block
+group. A block group is the smallest geographical unit for which the
+U.S. Census Bureau publishes sample data².
+
+- `HouseAge`: This is the median house age in a block group¹².
+It represents the median of the ages of all houses in a block group.
+
+- `AveRooms`: This is the average number of rooms per household¹².
+It's calculated by dividing the total number of rooms in all houses
+by the number of households in a block group. Note that this is not
+per house, but per household, which can include multiple houses.
+
+- `AveBedrms`: This is the average number of bedrooms per household¹².
+Similar to `AveRooms`, it's calculated by dividing the total number of
+bedrooms in all houses by the number of households in a block group.
+
+- `Population`: This is the total population in a block group¹².
+
+- `AveOccup`: This is the average number of people residing within a
+home, i.e., the average household size¹². It's calculated by dividing
+the total population by the number of households in a block group.
+
+- `Latitude` and `Longitude`: These represent the geographical
+coordinates (latitude and longitude respectively) of a block group¹².
+
+- `MedHouseVal`: This is the median house value for California districts,
+expressed in hundreds of thousands of dollars ($100,000)¹². It represents
+the median of all house values in a block group.
+
+Please note that since `AveRooms` and `AveBedrms` are provided per
+household, these columns may take surprisingly large values for block
+groups with few households and many empty houses, such as vacation
+resorts².
+
+Source: Conversation with Bing, 24/10/2023
+(1) sklearn.datasets.fetch_california_housing — scikit-learn 1.3.2 .... https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html.
+(2) The California housing dataset — Scikit-learn course - GitHub Pages. https://inria.github.io/scikit-learn-mooc/python_scripts/datasets_california_housing.html.
+(3) California housing I - Feature selection and data exploration. https://pupkinivan.github.io/2019/08/19/ca-housing-01-feature-selection.html.
+(4) California Housing dataset - GitHub. https://github.com/scikit-learn/scikit-learn/blob/main/sklearn/datasets/descr/california_housing.rst.
+(5) 2. Data preprocessing using scikit learn| California Housing Prices dataset. https://kathavachhani.medium.com/data-preprocessing-using-scikit-learn-california-housing-prices-dataset-f09187c073f6.
+(6) undefined. https://www.dcc.fc.up.pt/~ltorgo/Regression/cal_housing.html.
+(7) undefined. https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files.
