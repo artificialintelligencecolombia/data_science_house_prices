@@ -1,0 +1,34 @@
+==============================
+DATA CONVERTION & ANALYSIS
+==============================
+
+---------------------
+Create the dataframe
+---------------------
+
+´´´python
+import pandas as pd
+
+df = pd.DataFrame(X, columns=feature_names)
+df['MedHouseVal'] = y  # appending target to the dataframe
+
+´´´
+- df = pd.DataFrame(X, columns=feature_names)
+constructor method for creating the dataframe. X is the data we
+put into the dataframe. 
+- columns=feature_names, we ensure that each column
+in our DataFrame has the appropriate label corresponding to the feature
+it represents.
+- df['MedHouseVal']: This specifies a new column named 'MedHouseVal'.
+In pandas, if you assign values to a column name that doesn't yet exist
+in the DataFrame, pandas will create that column.
+- y contains the median house values, which is our dependent variable
+or target.
+
+---------------------
+Preliminary data analysis
+---------------------
+
+Checking the first few rows: print(df.head())
+Checking for missing values: print(df.isnull().sum())
+Summary statistics: print(df.describe())

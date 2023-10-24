@@ -1,0 +1,17 @@
+==============================
+INDEPENDENT & DEPENDENT VARIABLES
+==============================
+
+---------------------
+Independent variables
+---------------------
+
+- Also called features or predictors. These are the input to the model.
+ej: average income of people, average age.
+
+---------------------
+Dependent variables
+---------------------
+
+- Taget, Response, Outcome. They varies depending on the values of the
+independent variables. ej: median house value.

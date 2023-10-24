@@ -1,0 +1,14 @@
+==============================
+SCIKIT LEARN HOUSES DATASET
+==============================
+
+---------------------
+Load the dataset
+---------------------
+
+- This dataset is bundled with the scikit learn library (as well as
+other datasets). After installing the library on the conda venv,
+we can load the dataset.
+- The dataset comes in dictionary-like format called bunch. We can work 
+directly with this format. But pandas has more features and tools for
+data manipulation and easy readability.

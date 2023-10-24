@@ -1,0 +1,16 @@
+==============================
+CONDA
+==============================
+
+---------------------
+Create virtual environment
+---------------------
+
+conda create --name <env_name> 
+- create a conda environment for the project.
+
+conda activate <env_name>
+- activates the env of the project. 
+
+conda deactivate 
+- shuts down the env of the project.
