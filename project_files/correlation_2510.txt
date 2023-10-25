@@ -1,0 +1,36 @@
+==============================
+CORRELATION COEFFICIENT 
+==============================
+
+The correlation coefficient is a statistical measure that calculates
+the strength of the relationship between the relative movements of
+two variables. The values range between -1.0 and 1.0. 
+
+- POSITIVE correlation that as one variable increases, the other variable
+tends to also increase.
+- NEGATIVE correlation indicates that as one variable increases, the
+other variable tends to decrease.
+- NEAR ZERO/ZERO  correlation coefficient indicates a very weak or no
+linear relationship between the two variables.
+
+---------------------
+Understanding Correlation code in our Project
+---------------------
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+correlation_matrix = df.corr().round(2)
+sns.heatmap(data=correlation_matrix, annot=True, cmap='coolwarm')
+plt.show()
+´´´
+- df.corr().round(2): This line calculates the correlation between all
+pairs of columns in our DataFrame, rounding the results to two decimal
+places. Each cell in the resulting matrix represents the correlation
+between two columns.
+sns.heatmap(data=correlation_matrix, annot=True, cmap='coolwarm'):
+This line generates a heatmap of our correlation matrix using Seaborn
+and Matplotlib. The annot=True argument adds annotations to each cell
+in the heatmap, displaying the correlation coefficient.
+The cmap='coolwarm' argument sets the color map of the heatmap.

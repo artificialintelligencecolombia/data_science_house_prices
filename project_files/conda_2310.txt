@@ -14,3 +14,9 @@ conda activate <env_name>
 
 conda deactivate 
 - shuts down the env of the project.
+
+---------------------
+Installing packages
+---------------------
+
+conda install package_name
