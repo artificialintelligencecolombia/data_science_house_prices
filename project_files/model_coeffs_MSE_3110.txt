@@ -1,0 +1,42 @@
+==============================
+STATISTICS SUMMARY
+==============================
+
+---------------------
+Model Coefficients
+---------------------
+
+[ 4.48674910e-01,  9.72425752e-03, -1.23323343e-01,  7.83144907e-01,
+-2.02962058e-06, -3.52631849e-03, -4.19792487e-01, -4.33708065e-01]
+
+Each value in this array corresponds to the coefficient of a feature in the model. These coefficients represent the change in the target variable for a one unit change in the feature, assuming all other features remain constant.
+
+- Positive values indicate a positive correlation with the target variable.
+- Negative values indicate a negative correlation.
+
+The magnitude of the coefficient shows the strength of the correlation. A larger absolute value indicates a stronger relationship.
+
+---------------------
+Model Intercept
+---------------------
+
+-37.023277706064256
+
+This value represents the expected value of the target variable when all the features are equal to zero. The intercept can be thought of as the 'baseline' level of the target variable.
+
+---------------------
+Mean Squared Error
+---------------------
+
+0.5558915986952441
+
+This value represents the average of the squared differences between the actual and predicted values of the target variable. It provides a measure of the model's accuracy.
+
+- A lower MSE indicates a better fit of the model to the data.
+- MSE is sensitive to outliers. A few extreme values can result in a higher MSE, suggesting a worse fit than might actually be the case.
+
+---------------------
+Statistics Summary
+---------------------
+
+Utilizing the model coefficients, intercept, and MSE, we can summarize the performance and characteristics of the model. Understanding these statistics is crucial for interpreting the model’s predictions and for identifying potential areas for improvement.
