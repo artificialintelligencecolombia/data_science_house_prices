@@ -1,72 +1,112 @@
-# Boston Housing Price Prediction
+# California Housing Prices Mini Project
 
-A data science project aimed at predicting median house prices in various neighborhoods of Boston.
+## Overview
+
+This mini project focuses on analyzing the California Housing Prices dataset using various data science techniques. The main goal is to understand the data, visualize relationships, check for missing values, and perform a simple linear regression analysis to predict median house values.
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Setup & Installation](#setup--installation)
-3. [Data](#data)
-4. [Methodology](#methodology)
-5. [Results](#results)
-6. [Deployment](#deployment)
-7. [Contributing](#contributing)
-8. [Acknowledgments](#acknowledgments)
-9. [License](#license)
 
-## Introduction
-The Boston Housing dataset contains information about various houses in Boston through different parameters. This project's main objective is to utilize this data to predict median house prices using machine learning models.
+- [Overview](#overview)
+- [Dependencies](#dependencies)
+- [Dataset](#dataset)
+- [Features](#features)
+- [Steps Performed](#steps-performed)
+- [How to Run](#how-to-run)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [About the Author](#about-the-author)
+- [Future Work](#future-work)
 
-## Setup & Installation
-A step-by-step guide to set up and get the project running on your local machine.
+## Dependencies
 
-- **Prerequisites**: Python, Anaconda
-- **Installation Steps**:
-    1. Clone the repository: `git clone [repo-link]`
-    2. Navigate to the directory: `cd boston-housing-prediction`
-    3. Install dependencies: `conda create --name <env_name> --file requirements.txt`
+- Python 3.x
+- Pandas: For data manipulation and analysis.
+- Scikit-Learn: For machine learning algorithms and data preprocessing.
+- Seaborn: For statistical data visualization.
+- Matplotlib: For creating static, animated, and interactive visualizations.
 
-## Data
-Detailed description of the dataset, its features, and source.
+## Dataset
 
-- **Source**: Mention where you obtained the data. 
-- **Features**: 
-    - `CRIM`: Per capita crime rate
-    - `ZN`: Proportion of residential land zoned
-    - (Continue listing other features)
+The dataset used in this project is the California Housing Prices dataset which can be fetched directly using Scikit-Learn's `fetch_california_housing` function.
 
-## Methodology
-Breakdown of the steps involved in the project, including:
+## Features
 
-- **Data Cleaning**: Outline steps taken to clean the data.
-- **Exploratory Analysis**: Insights derived from the initial exploration of the data.
-- **Modeling**: Discussion on the algorithms chosen, how they were trained, and their performance metrics.
+The dataset includes the following features:
+
+- MedInc: median income in block
+- HouseAge: median house age in block
+- AveRooms: average number of rooms
+- AveBedrms: average number of bedrooms
+- Population: block population
+- AveOccup: average house occupancy
+- Latitude: house block latitude
+- Longitude: house block longitude
+
+The target variable is `MedHouseVal`, representing the median house value for California districts.
+
+## Steps Performed
+
+1. **Data Fetching and Initial Exploration**: The dataset is loaded and a preliminary examination is conducted to understand its structure, features, and target variable.
+2. **Data Preprocessing and Cleaning**: Information about the data, such as data types and missing values, is retrieved and displayed.
+3. **Data Visualization**: A heatmap of the correlation matrix is created to visually analyze relationships between different features.
+4. **Data Splitting**: The dataset is split into training and testing sets, with 80% of the data used for training and 20% for testing.
+5. **Model Training**: A linear regression model is trained using the training data.
+6. **Model Evaluation**: The trained model is evaluated on the test set using Mean Squared Error as the performance metric.
+
+## How to Run
+
+Ensure that you have all the required dependencies installed
+(tip: use pip or conda for the virtual env). You can run the script using a Python interpreter:
+
+`housing_prices.ipynb`
 
 ## Results
-Summary of the project's outcomes and findings.
 
-- **Best Model**: e.g., Random Forest with a mean absolute error of XYZ.
-- **Feature Importance**: Discuss the most influential features impacting the housing price.
-
-## Deployment
-Information about how the model was or can be deployed in a real-world setting.
+The program prints the coefficients and intercept of the linear regression model, as well as the Mean Squared Error of the model on the test set. Additionally, various aspects of the dataset including the first few rows, dataset information, summary statistics, and a heatmap of the correlation matrix are displayed.
 
 ## Contributing
-Instructions for interested folks who'd like to contribute.
 
-1. Fork the repository on GitHub.
-2. Clone the project.
-3. Make your changes.
-4. Push and open a pull request.
-
-## Acknowledgments
-Recognize contributors, data providers, or any third-party tools you found helpful.
-
-- Data Source: [UCI Machine Learning Repository](link-to-data-source)
-- Mentor or advisor names, if any.
-- Tools or libraries used.
+If you wish to contribute to this project, please fork the repository and submit a pull request.
 
 ## License
-Details about the license, if applicable. E.g.,
 
-"This project is licensed under the MIT License."
+This project is open source and available under the [MIT License](LICENSE.md).
 
+## Contact
+
+Feel free to contact the maintainer for any inquiries or suggestions at [DANIEL'S LINKEDIN](https://www.linkedin.com/in/danielmaldonadoco/).
+
+## About the Author
+
+I'm a data scientist with [2] years of experience in data science. I have a strong background in web development, Python and a proven track record of leveraging data-driven insights to solve real-world problems.
+
+## Future Work
+
+This project serves as a foundational analysis of the California Housing Prices dataset. Future work could include:
+
+- Implementing more advanced machine learning models such as Random Forest or Gradient Boosting for improved prediction accuracy.
+- Conducting a deeper analysis of feature importance.
+- Implementing cross-validation for better model evaluation.
+- Exploring additional data preprocessing techniques.
+
+---
+
+### Recruiter's Feedback (AI chat)
+
+The README file is well-structured and provides a comprehensive overview of the project, which is excellent. The addition of the ‘About the Author’ section is a great touch as it gives insight into the author's background and expertise. However, it would be beneficial to include the following:
+
+1. **Technical Skills Highlighted**: Explicitly mention and highlight the technical skills and tools used in the project. For instance, mentioning Python, Pandas, Scikit-Learn, Seaborn, and Matplotlib explicitly under a ‘Skills’ or ‘Technologies Used’ section.
+
+2. **Problem Solving and Critical Thinking**: Elaborate on the problem-solving process or any critical thinking applied during the project. This could be included in the ‘Steps Performed’ or ‘Results’ sections.
+
+3. **Quantifiable Results and Impact**: If possible, quantify the results or impact of the project. For example, how much did the model’s performance improve compared to a baseline? Did this analysis lead to any actionable insights?
+
+4. **Collaboration and Communication**: If the project was part of a team effort or if there were any stakeholders involved, mention this and highlight the communication and collaboration skills.
+
+5. **Link to Portfolio**: Include a link to a portfolio or other projects, if available. This provides recruiters with easy access to assess the author’s skills and experience further.
+
+6. **Demonstration of Learning and Growth**: If the project was part of a learning journey or bootcamp, mentioning this and reflecting on the learning experience can be beneficial.
+
+7. **Use of Comments in Code**: While not directly related to the README, ensuring that the provided code is well-commented and follows best practices is crucial. This reflects on the author's coding style and attention to detail.
